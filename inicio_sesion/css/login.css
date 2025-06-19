@@ -1,0 +1,133 @@
+/* Reset básico */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Lado izquierdo */
+.lado-izquierdo {
+  flex: 1;
+  background-color: #c4c4c4;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.lado-izquierdo h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* Lado derecho */
+.lado-derecho {
+  flex: 1;
+  background-color: #f9fafb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario-login {
+  background: transparent;
+  width: 100%;
+  max-width: 400px;
+}
+
+.formulario-login h2 {
+  font-size: 28px;
+  color: #111827;
+  margin-bottom: 5px;
+}
+
+.subtitulo {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* Campos del formulario */
+.formulario-login label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+.formulario-login input[type="email"],
+.formulario-login input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  margin-bottom: 18px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Acciones: checkbox + olvido */
+.acciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.recordar {
+  color: #374151;
+}
+
+.olvido {
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.olvido:hover {
+  text-decoration: underline;
+}
+
+/* Botón */
+.boton-login {
+  width: 100%;
+  padding: 12px;
+  background-color: #2563eb; /* Azul brillante */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-login:hover {
+  background-color: #1d4ed8;
+}
+
+/* Enlace para registro */
+.registro {
+  margin-top: 20px;
+  font-size: 13px;
+  text-align: center;
+  color: #6b7280;
+}
+
+.registro a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.registro a:hover {
+  text-decoration: underline;
+}

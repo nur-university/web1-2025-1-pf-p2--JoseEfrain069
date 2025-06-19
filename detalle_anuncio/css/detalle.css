@@ -1,0 +1,132 @@
+
+.container {
+  display: flex;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.imagen img {
+  width: 350px;
+  border-radius: 8px;
+}
+
+.detalles {
+  flex: 1;
+}
+
+.titulo {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.precio {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.vendedor p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.vendedor-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.mensaje-btn {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.favorito-btn {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.descripcion {
+  max-width: 900px;
+  margin: 40px auto;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; 
+    gap: 20px; 
+    padding: 20px; 
+    align-items: center;
+  }
+
+  .imagen img {
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+
+  .detalles {
+    text-align: center; 
+  }
+
+  .titulo {
+    font-size: 18px; 
+  }
+
+  .precio {
+    font-size: 16px; 
+  }
+
+  .botones {
+    flex-direction: column; 
+    gap: 10px; 
+  }
+
+  .mensaje-btn, .favorito-btn {
+    width: 100%; 
+  }
+
+  .descripcion {
+    font-size: 14px; 
+    padding: 10px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 16px; 
+  }
+
+  .precio {
+    font-size: 14px; 
+  }
+
+  .descripcion {
+    font-size: 12px; 
+  }
+}
